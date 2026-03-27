@@ -1,1 +1,0 @@
-globalThis.__RSC_MANIFEST=(globalThis.__RSC_MANIFEST||{});globalThis.__RSC_MANIFEST["/api/memo/summarize/route"]={"moduleLoading":{"prefix":"/_next/"},"ssrModuleMapping":{},"edgeSSRModuleMapping":{},"clientModules":{},"entryCSSFiles":{"C:\\Users\\masocampus\\Desktop\\memo-app-base\\src\\app\\api\\memo\\summarize\\route":[]},"rscModuleMapping":{},"edgeRscModuleMapping":{}};
