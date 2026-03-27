@@ -1,0 +1,68 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* @uiw/react-markdown-preview — 목록 카드 요약 */
+.memo-md-preview--compact {
+  max-height: 4.75rem;
+  overflow: hidden;
+}
+
+.memo-md-preview--compact .wmde-markdown {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
+
+.memo-md-preview--compact .wmde-markdown h1,
+.memo-md-preview--compact .wmde-markdown h2,
+.memo-md-preview--compact .wmde-markdown h3 {
+  font-size: 0.875rem;
+  margin: 0 0 0.25rem;
+}
+
+.memo-md-preview--compact .wmde-markdown p {
+  margin: 0 0 0.25rem;
+}
+
+/* 상세/목록 공통: 포스트잇 배경과 어울리게 */
+.memo-md-preview .wmde-markdown {
+  background: transparent !important;
+}
